@@ -13,7 +13,7 @@
     <link href="https://googleapis.com" rel="stylesheet">
 
 </head>
-<body>
+<body id="top">
 
 <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container-fluid">
@@ -27,29 +27,23 @@
 
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto gap-3">
-
                 <li class="nav-item">
-                    <a class="nav-link custom-nav-link " href="#top">Home</a>
+                    <a href="#top" class="nav-link custom-nav-link nav-scroll">Home</a>
                 </li>
-
                 <li class="nav-item">
-                    <a href="#about" class="nav-link custom-nav-link">About</a>
+                    <a href="#about" class="nav-link custom-nav-link nav-scroll">About</a>
                 </li>
-
                 <li class="nav-item">
-                    <a class="nav-link custom-nav-link" href="#skills">Skills</a>
+                    <a href="#skills" class="nav-link custom-nav-link nav-scroll">Skills</a>
                 </li>
-
                 <li class="nav-item">
-                    <a class="nav-link custom-nav-link" href="#education">Education</a>
+                    <a href="#education" class="nav-link custom-nav-link nav-scroll">Education</a>
                 </li>
-
                 <li class="nav-item">
-                    <a class="nav-link custom-nav-link" href="#projects">Projects</a>
+                    <a href="#projects" class="nav-link custom-nav-link nav-scroll">Project</a>
                 </li>
-
                 <li class="nav-item">
-                    <a class="nav-link custom-nav-link" href="#contact-info">Contact</a>
+                    <a href="#contact-info" class="nav-link custom-nav-link nav-scroll">Contact</a>
                 </li>
             </ul>
         </div>
@@ -256,6 +250,25 @@
       992: { slidesPerView: 3 }
     }
   });
+</script>
+
+<script>
+    document.querySelectorAll('.nav-scroll').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault(); // Chặn việc đổi URL có chứa dấu #
+            
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            
+            if (targetElement) {
+                // Cuộn trang mượt mà đến vị trí đó mà URL không bị thay đổi
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
 </script>
 
 

@@ -45,8 +45,17 @@ body::before {
     transition: color 0.3s ease;
 }
 
-.custom-nav-link:hover{
-    color: #38bdf8;
+.custom-nav-link,
+.custom-nav-link:focus,
+.custom-nav-link:active,
+.custom-nav-link:visited {
+    color: #ffffff !important; 
+    outline: none !important; 
+    box-shadow: none !important;
+}
+
+.custom-nav-link:hover {
+    color: #38bdf8 !important; 
 }
 
 .navbar-toggler{
