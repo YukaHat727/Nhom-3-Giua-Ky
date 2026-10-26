@@ -1,0 +1,486 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio cá nhân của Nguyễn Đoàn Thanh Tâm">
+    <title>Nguyễn Đoàn Thanh Tâm | Portfolio</title>
+
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- HEADER / NAVBAR -->
+    <header>
+        <nav class="container navbar">
+            <a href="#home" class="logo"></a>
+
+            <button class="menu-btn" id="menuBtn"
+                    aria-label="Mở menu" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Trang chủ</a></li>
+                <li><a href="#about">Giới thiệu</a></li>
+                <li><a href="#skills">Kỹ năng</a></li>
+                <li><a href="#education">Học vấn</a></li>
+                <li><a href="#projects">Dự án</a></li>
+                <li><a href="#extras">Thông tin khác</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+
+            <button class="theme-btn" id="themeBtn"
+                    aria-label="Đổi giao diện">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- BANNER -->
+        <section class="hero" id="home">
+            <div class="container hero-grid">
+
+                <div class="hero-content">
+                    <span class="badge">
+                        <i class="fa-solid fa-circle"></i>
+                        Sinh viên Công nghệ thông tin
+                    </span>
+
+                    <h1>
+                        Xin chào mọi người đã đến với wed, mình tên là
+                        <span class="gradient-text">
+                            Nguyễn Đoàn Thanh Tâm
+                        </span>
+                    </h1>
+
+                    <p>
+                        Mình là sinh viên ngành Công nghệ thông tin tại
+                        Trường Đại học Bình Dương. Mình yêu thích lập trình
+                        và khám phá để không ngừng học hỏi các kinh nghiệm, kiến thức từ mọi người xung quanh để tích lũy kiến thức cho bản thân.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fa-solid fa-code"></i>
+                            Xem dự án
+                        </a>
+
+                        <a href="#contact" class="btn btn-outline">
+                            Liên hệ mình
+                        </a>
+                    </div>
+                </div>
+
+                <div class="profile-card">
+                    <div class="avatar">
+                        <img src="https://th.bing.com/th/id/OIP.KY4-pIa9ZzKA-yUUaosLSQHaHa?w=193&h=193&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+                             alt="Ảnh đại diện Nguyễn Đoàn Thanh Tâm"
+                             onerror="this.style.display='none'">
+                        <i class="fa-solid fa-user-astronaut"></i>
+                    </div>
+
+                    <h2>Nguyễn Đoàn Thanh Tâm</h2>
+                    <p>Sinh viên Công nghệ thông tin</p>
+
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Python</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- GIỚI THIỆU -->
+        <section id="about">
+            <div class="container">
+                <h2 class="section-title">Giới thiệu bản thân</h2>
+
+                <p class="section-desc">
+                    Thông tin cá nhân và mục tiêu nghề nghiệp của mình.
+                </p>
+
+                <div class="two-columns">
+
+                    <article class="card">
+                        <h3>
+                            <i class="fa-solid fa-user"></i>
+                            Về mình
+                        </h3>
+
+                        <p>
+                            Mình là Nguyễn Đoàn Thanh Tâm, đang học ngành
+                            Công nghệ thông tin tại Trường Đại học Bình Dương.
+                            Mình đang xây dựng kiến thức cơ bản về lập trình,
+                            cơ sở dữ liệu và phát triển website.
+                        </p>
+
+                        <ul class="info-list">
+                            <li><strong>Họ tên:</strong> Nguyễn Đoàn Thanh Tâm</li>
+                            <li><strong>Ngành:</strong> Công nghệ thông tin</li>
+                            <li><strong>Trường:</strong> Đại học Bình Dương</li>
+                            <li><strong>Lĩnh vực:</strong> Kỹ thuật phần mềm</li>
+                        </ul>
+                    </article>
+
+                    <article class="card">
+                        <h3>
+                            <i class="fa-solid fa-bullseye"></i>
+                            Mục tiêu nghề nghiệp
+                        </h3>
+
+                        <p>
+                            <strong>Ngắn hạn:</strong>
+                            Nắm vững HTML, CSS, JavaScript, Python và SQL;
+                            hoàn thành các dự án thực hành để nâng cao kỹ năng.
+                        </p>
+
+                        <p>
+                            <strong>Dài hạn:</strong>
+                            Trở thành lập trình viên chuyên nghiệp, xây dựng
+                            sản phẩm hữu ích và tiếp tục học hỏi công nghệ mới.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- KỸ NĂNG -->
+        <section id="skills" class="alternate">
+            <div class="container">
+                <h2 class="section-title">Kỹ năng của mình</h2>
+
+                <p class="section-desc">
+                    Những công nghệ mình đang học tập và thực hành.
+                </p>
+
+                <div class="skills-grid">
+
+                    <!-- FRONTEND -->
+                    <article class="card">
+                        <i class="fa-solid fa-laptop-code skill-icon"></i>
+                        <h3>Frontend</h3>
+
+                        <div class="skill">
+                            <div class="skill-info">
+                                <span>HTML</span>
+                                <span>50%</span>
+                            </div>
+                            <div class="progress">
+                                <span style="width: 50%"></span>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skill-info">
+                                <span>CSS</span>
+                                <span>50%</span>
+                            </div>
+                            <div class="progress">
+                                <span style="width: 50%"></span>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skill-info">
+                                <span>JavaScript</span>
+                                <span>50%</span>
+                            </div>
+                            <div class="progress">
+                                <span style="width: 50%"></span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- LẬP TRÌNH -->
+                    <article class="card">
+                        <i class="fa-brands fa-python skill-icon"></i>
+                        <h3>Lập trình</h3>
+
+                        <div class="skill">
+                            <div class="skill-info">
+                                <span>Python</span>
+                                <span>50%</span>
+                            </div>
+                            <div class="progress">
+                                <span style="width: 50%"></span>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skill-info">
+                                <span>OOP</span>
+                                <span>50%</span>
+                            </div>
+                            <div class="progress">
+                                <span style="width: 50%"></span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- CƠ SỞ DỮ LIỆU -->
+                    <article class="card">
+                        <i class="fa-solid fa-database skill-icon"></i>
+                        <h3>Cơ sở dữ liệu</h3>
+
+                        <div class="skill">
+                            <div class="skill-info">
+                                <span>SQL</span>
+                                <span>50%</span>
+                            </div>
+                            <div class="progress">
+                                <span style="width: 50%"></span>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skill-info">
+                                <span>Thiết kế ERD</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="progress">
+                                <span style="width: 70%"></span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- HỌC VẤN / HOẠT ĐỘNG -->
+        <section id="education">
+            <div class="container">
+                <h2 class="section-title">Học vấn & hoạt động</h2>
+
+                <p class="section-desc">
+                    Quá trình học tập và phát triển bản thân.
+                </p>
+
+                <div class="timeline">
+
+                    <article class="timeline-item">
+                        <span>Hiện tại</span>
+                        <h3>Trường Đại học Bình Dương</h3>
+                        <p>
+                            Ngành Công nghệ thông tin. Học lập trình,
+                            cơ sở dữ liệu và thiết kế website.
+                        </p>
+                    </article>
+
+                    <article class="timeline-item">
+                        <span>Thực hành cá nhân</span>
+                        <h3>Học lập trình và xây dựng sản phẩm</h3>
+                        <p>
+                            Thực hành Python OOP, HTML, CSS, JavaScript
+                            và thiết kế cơ sở dữ liệu.
+                        </p>
+                    </article>
+
+                    <article class="timeline-item">
+                        <span>Chứng chỉ / giải thưởng</span>
+                        <h3>Chưa có</h3>
+                        <p>Sẽ cập nhật khi có thành tích thực tế.</p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- DỰ ÁN: CHỈ GIỮ QUẢN LÝ NHÂN SỰ -->
+        <section id="projects" class="alternate">
+            <div class="container">
+                <h2 class="section-title">Dự án cá nhân</h2>
+
+                <p class="section-desc">
+                    Dự án được thực hiện trong quá trình học tập
+                    ngành Công nghệ thông tin.
+                </p>
+
+                <div class="projects-grid">
+                    <article class="card project-card">
+
+                        <div class="project-visual">
+                            <i class="fa-solid fa-users-gear"></i>
+                        </div>
+
+                        <h3>Cơ sở dữ liệu quản lý nhân sự</h3>
+
+                        <p>
+                            Đề tài xây dựng cơ sở dữ liệu nhằm quản lý
+                            thông tin nhân viên trong doanh nghiệp.
+                            Hệ thống hỗ trợ lưu trữ và tra cứu thông tin
+                            nhân viên, phòng ban, chức vụ, hợp đồng,
+                            chấm công, sản phẩm và nghỉ phép.
+                        </p>
+
+                        <h4>Công nghệ sử dụng</h4>
+
+                        <div class="tags">
+                            <span>SQL</span>
+                            <span>ERD</span>
+                            <span>Cơ sở dữ liệu</span>
+                        </div>
+
+                        <h4>Nội dung thực hiện</h4>
+
+                        <ul class="info-list">
+                            <li>Phân tích yêu cầu của đề tài.</li>
+                            <li>Xác định các tập thực thể và thuộc tính.</li>
+                            <li>Xác định khóa chính và khóa ngoại.</li>
+                            <li>Thiết kế sơ đồ ERD.</li>
+                            <li>Xác định mối quan hệ giữa các thực thể.</li>
+                            <li>Thiết kế các bảng trong cơ sở dữ liệu.</li>
+                        </ul>
+
+                        <div class="project-footer">
+                            <span class="project-link">
+                                <i class="fa-solid fa-database"></i>
+                                Dự án học tập
+                            </span>
+                        </div>
+
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHỨNG CHỈ / GIẢI THƯỞNG / SỞ THÍCH -->
+        <section id="extras">
+            <div class="container">
+                <h2 class="section-title">Thông tin bổ sung</h2>
+
+                <p class="section-desc">
+                    Một số thông tin khác về bản thân.
+                </p>
+
+                <div class="skills-grid">
+
+                    <article class="card">
+                        <i class="fa-solid fa-certificate skill-icon"></i>
+                        <h3>Chứng chỉ</h3>
+                        <p>Chưa có. Sẽ cập nhật khi đạt được.</p>
+                    </article>
+
+                    <article class="card">
+                        <i class="fa-solid fa-trophy skill-icon"></i>
+                        <h3>Giải thưởng</h3>
+                        <p>Chưa có. Đang tập trung học tập và thực hành.</p>
+                    </article>
+
+                    <article class="card">
+                        <i class="fa-solid fa-heart skill-icon"></i>
+                        <h3>Sở thích</h3>
+                        <p>Lập trình, chơi game và khám phá công nghệ mới.</p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- LIÊN HỆ -->
+        <section id="contact" class="alternate">
+            <div class="container">
+                <h2 class="section-title">Liên hệ với mình</h2>
+
+                <p class="section-desc">
+                    Gửi lời nhắn hoặc trao đổi về các dự án học tập.
+                </p>
+
+                <div class="two-columns">
+
+                    <article class="card">
+                        <h3>Thông tin liên hệ</h3>
+
+                        <ul class="info-list">
+                            <li>
+                                <strong>Họ tên:</strong>
+                                Nguyễn Đoàn Thanh Tâm
+                            </li>
+                            <li>
+                                <strong>Ngành:</strong>
+                                Công nghệ thông tin
+                            </li>
+                            <li>
+                                <strong>Email:</strong>
+                                Chưa cập nhật
+                            </li>
+                            <li>
+                                <strong>GitHub:</strong>
+                                Chưa cập nhật
+                            </li>
+                        </ul>
+                    </article>
+
+                    <form class="card contact-form"
+                          id="contactForm" novalidate>
+
+                        <div class="form-group">
+                            <label for="name">Họ và tên *</label>
+                            <input id="name" name="name" type="text"
+                                   placeholder="Nhập họ và tên" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input id="email" name="email" type="email"
+                                   placeholder="example@email.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Chủ đề *</label>
+                            <input id="subject" name="subject" type="text"
+                                   placeholder="Chủ đề liên hệ" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Nội dung *</label>
+                            <textarea id="message" name="message"
+                                      placeholder="Nhập lời nhắn"
+                                      required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            Kiểm tra thông tin
+                        </button>
+
+                        <p id="formMessage"
+                           role="status" aria-live="polite"></p>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>
+                © <span id="year"></span>
+                Nguyễn Đoàn Thanh Tâm
+            </p>
+            <p>Được xây dựng bằng HTML, CSS và JavaScript.</p>
+        </div>
+    </footer>
+
+    <!-- NÚT CUỘN LÊN ĐẦU TRANG -->
+    <button id="backTop" aria-label="Cuộn lên đầu trang">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- LIÊN KẾT JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,319 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    position: relative;
+    background-color: #121212; 
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://limbuscompany.wiki.gg/images/S912.png?746807=&format=original");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    filter: blur(10px);
+    
+    transform: scale(1.05); 
+    
+    z-index: -1; 
+}
+
+.navbar{
+    background: rgba(15, 23, 42, 0.55);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+    transition: background 0.3 ease;
+}
+
+.navbar-content{
+    color: white;
+}
+
+.custom-nav-link{
+    color: #e2e8f0;
+    font-family: "Roboto", sans-serif;
+    font-size: 17px;
+    transition: color 0.3s ease;
+}
+
+.custom-nav-link:hover{
+    color: #38bdf8;
+}
+
+.navbar-toggler{
+    border-color: #ffffff;
+}
+
+.navbar-toggler-icon{
+    filter: invert(1);
+}
+
+.home {
+    padding-top: 120px; 
+}
+
+.name {
+    text-align: center;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    font-family: "Roboto", sans-serif;
+    animation: fadeInOnly 1.2s ease-out forwards;   
+    margin-top: -15px;
+    margin-bottom: 20px;
+}
+
+.intro-card {
+    background: rgba(15, 23, 42, 0.65);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    
+    animation: fadeInOnly 1.2s ease-out forwards;
+    
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), 
+                box-shadow 0.4s ease, 
+                border-color 0.4s ease;
+}
+
+.intro-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.5);
+    border-color: #38bdf8;
+}
+
+.intro-text {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #e2e8f0;
+}
+
+.intro-text strong {
+    color: #38bdf8; 
+}
+
+.profile-avatar {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    
+    display: block;
+    margin: 0 auto 20px auto; 
+    animation: fadeInOnly 0.8s ease-out forwards;
+}
+
+.content-home{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+}
+
+.about-box {
+    max-width: 800px;
+    width: 100%;
+    background: rgba(15, 23, 42, 0.55);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    justify-content: center;
+    align-items: center;
+    animation: fadeInOnly 1s ease-out forwards;
+}
+
+.about-box:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.5);
+    border-color: #38bdf8
+}
+
+.title-about {
+    font-family: "Roboto", sans-serif;
+    color: #ffffff;
+    letter-spacing: 2px;
+    -webkit-text-stroke: 1px #000;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+
+.skill-card {
+    background: rgba(15, 23, 42, 0.55);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    border-color: #38bdf8;
+}
+
+.skill-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.skill-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 16px;
+    color: white;
+}
+
+.skill-list li:last-child {
+    border-bottom: none;
+}
+
+.education-card{
+    background: rgba(15, 23, 42, 0.55);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+
+}
+
+.education-card:hover{
+    transform: translateY(-3px);
+    border-color: #38bdf8;
+}
+
+.edu-details{
+    color: #cbd5e1;
+    padding-left: 20px;
+}
+
+.edu-details li {
+    margin-bottom: 5px;
+}
+
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #38bdf8;
+    color: #38bdf8;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    background-color: #38bdf8;
+    color: #000;
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgba(15, 23, 42, 0.);
+}
+
+.about-text{
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    animation: fadeInOnly 1s ease-out forwards;
+}
+
+.myskill-text{
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.education-text{
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.social-text{
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.hobby-box{
+    max-width: 800px;
+    width: 100%;
+    background-color: rgba(15, 23, 42, 0.55);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    justify-content: center;
+    align-items: center;
+}
+
+.hobby-box:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.5);
+    border-color: #38bdf8;
+}
+
+.icon {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+.hobbies-title{
+    color: #38bdf8;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+}
+
+.hobbies-text{
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+}
+
+.hobby-title{
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+
+
+}
+
+.about-content strong{
+    color: #38bdf8;
+    font-weight: bold;
+}
+
+@keyframes fadeInOnly {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
